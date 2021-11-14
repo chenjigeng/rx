@@ -9,4 +9,4 @@ coverage/*
 # custom definition files
 /src/types/
 demos
-/node_modules/*
+node_modules

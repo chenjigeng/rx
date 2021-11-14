@@ -9,11 +9,9 @@ function useFetch(cb, options) {
         delete options.autoClear;
     }
     const release = (0, rx_1.useFetch)(cb, options);
-    console.log('autoClear', autoClear, vue_1.onUnmounted);
     if (autoClear) {
         (0, vue_1.onUnmounted)(() => {
             release();
-            console.log('clear');
         });
     }
     return release;

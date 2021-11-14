@@ -8,11 +8,9 @@ export function useFetch(cb: Callback, options: UseFetchOptions) {
   }
   const release = useBaseFetch(cb, options);
 
-  console.log('autoClear', autoClear, onUnmounted);
   if (autoClear) {
     onUnmounted(() => {
       release()
-      console.log('clear');
     });
   }
 

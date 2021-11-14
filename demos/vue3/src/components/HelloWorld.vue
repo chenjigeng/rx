@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import { useFetch } from '../../../../packages/rx-vue3/lib/index';
+import { useFetch } from 'rx-vue3';
 
 export default defineComponent({
   name: 'HelloWorld',
